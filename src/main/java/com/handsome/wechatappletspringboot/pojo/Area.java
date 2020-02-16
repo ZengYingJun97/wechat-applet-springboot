@@ -23,7 +23,7 @@ public class Area {
 	private Date createTime;
 
 	//更新时间
-	private Date lastEDitTime;
+	private Date lastEditTime;
 
 	public int getAreaId() {
 		return areaId;
@@ -57,12 +57,12 @@ public class Area {
 		this.createTime = createTime;
 	}
 
-	public Date getLastEDitTime() {
-		return lastEDitTime;
+	public Date getLastEditTime() {
+		return lastEditTime;
 	}
 
-	public void setLastEDitTime(Date lastEDitTime) {
-		this.lastEDitTime = lastEDitTime;
+	public void setLastEditTime(Date lastEDitTime) {
+		this.lastEditTime = lastEDitTime;
 	}
 
 	@Override
@@ -72,7 +72,7 @@ public class Area {
 				", areaName='" + areaName + '\'' +
 				", priority=" + priority +
 				", createTime=" + createTime +
-				", lastEDitTime=" + lastEDitTime +
+				", lastEditTime=" + lastEditTime +
 				'}';
 	}
 }
