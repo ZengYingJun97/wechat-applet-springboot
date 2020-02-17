@@ -1,7 +1,7 @@
 package com.handsome.wechatappletspringboot.dao;
 
 import com.handsome.wechatappletspringboot.pojo.Area;
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -11,6 +11,7 @@ import java.util.List;
  * @author handsome
  * @date 2020年 02月16日 11:43:34
  */
+@Mapper
 public interface AreaDao {
 
 	/**
@@ -47,7 +48,6 @@ public interface AreaDao {
 	 * @param area
 	 * @return int
 	 */
-	@Update("")
 	int updateArea(Area area);
 
 	/**
