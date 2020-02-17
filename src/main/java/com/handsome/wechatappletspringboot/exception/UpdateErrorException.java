@@ -6,13 +6,13 @@ package com.handsome.wechatappletspringboot.exception;
  * @author handsome
  * @date 2020年 02月17日 22:43:22
  */
-public class InsertErrorException extends AppletException {
+public class UpdateErrorException extends AppletException {
 
-	public InsertErrorException(String message) {
+	public UpdateErrorException(String message) {
 		super(message);
 	}
 
-	public InsertErrorException(String message, Throwable cause) {
+	public UpdateErrorException(String message, Throwable cause) {
 		super(message, cause);
 	}
 }
