@@ -10,6 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Date;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
@@ -30,17 +31,34 @@ public class AreaDaoTest {
 
 	@Test
 	public void queryAreaById() {
+		int areaId = 1;
+		Area area = areaDao.queryAreaById(areaId);
+		logger.info("area = {}", area);
 	}
 
 	@Test
 	public void insertArea() {
+		Area area = new Area();
+		area.setAreaName("南苑");
+		area.setPriority(1);
+		int insertCount = areaDao.insertArea(area);
+		logger.info("insertCount = {}", insertCount);
 	}
 
 	@Test
 	public void updateArea() {
+		Area area = new Area();
+		area.setAreaId(2);
+		area.setAreaName("南苑");
+		area.setLastEditTime(new Date());
+		int updateCount = areaDao.updateArea(area);
+		logger.info("updateCount = {}", updateCount);
 	}
 
 	@Test
 	public void deleteArea() {
+		int areaId = 2;
+		int deleteCount = areaDao.deleteArea(areaId);
+		logger.info("deleteCount = {}", deleteCount);
 	}
 }

@@ -1,8 +1,7 @@
 package com.handsome.wechatappletspringboot.dao;
 
 import com.handsome.wechatappletspringboot.pojo.Area;
-import org.apache.ibatis.annotations.*;
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -13,7 +12,6 @@ import java.util.List;
  * @date 2020年 02月16日 11:43:34
  */
 @Mapper
-@Component
 public interface AreaDao {
 
 	/**
@@ -50,7 +48,6 @@ public interface AreaDao {
 	 * @param area
 	 * @return int
 	 */
-	@Update("")
 	int updateArea(Area area);
 
 	/**
