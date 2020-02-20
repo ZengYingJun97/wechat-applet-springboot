@@ -3,10 +3,7 @@ package com.handsome.wechatappletspringboot.controller;
 import com.handsome.wechatappletspringboot.pojo.Area;
 import com.handsome.wechatappletspringboot.service.impl.AreaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -55,7 +52,7 @@ public class AreaController {
 		return modelMap;
 	}
 
-	@RequestMapping(value = "/removearea", method = RequestMethod.POST)
+	@RequestMapping(value = "/removearea", method = RequestMethod.GET)
 	private Map<String, Object> removeArea(int areaId) {
 		Map<String, Object> modelMap = new HashMap<>();
 		modelMap.put("success", areaServiceImpl.deleteArea(areaId));
