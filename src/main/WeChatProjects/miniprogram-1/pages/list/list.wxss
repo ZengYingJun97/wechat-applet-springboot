@@ -1,0 +1,32 @@
+/* pages/list/list.wxss */
+.widget {
+  position: relative;
+  margin: 5rpx 0;
+  padding: 10rpx 40rpx 10rpx 40rpx;
+  border: #ddd 1px solid;
+}
+
+.container {
+  height: 100%;
+  display: table;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10rpx 0;
+  text-align: center;
+}
+
+.column {
+  width: 4rem;
+  display: table-cell;
+}
+
+.link-column {
+  width: 6rem;
+  display: table-cell;
+}
+
+.link {
+  color: blue;
+  display: inline-table;
+}
